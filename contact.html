@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Johnson Chen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="skill.html">Skill</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container">
+        <form action="" id="contactForm">
+            <div>
+              <h1>Want To Message Me?</h1>
+              <h3>I Will Get Back To You As Soon As Possible!</h3>
+            </div>
+            <div class="alert">Message Has Been Sent!</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your Name" required/>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email" required/>
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./contact.js"></script>
+</body>
+
+</html>
