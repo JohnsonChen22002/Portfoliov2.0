@@ -238,3 +238,91 @@ form{
   font-weight: 900;
   display: none;
 }
+.about-content{
+  height:40%;
+  width:40%;
+  overflow:auto;
+  border:2px solid #D2471F;
+  padding:1%;
+  color:#E1CA72;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 33%;
+  left: 7%;
+}
+.about-content::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+.about-content::-webkit-scrollbar-track
+{
+  background-color: #E1CA72;
+  border-radius: 10px;
+}
+.about-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(253, 69, 18)),
+									   color-stop(0.72, rgb(255, 86, 40)),
+									   color-stop(0.86, rgb(255, 115, 77)));
+}
+.flex-container {
+  display: flex;
+}
+.about-content-two{
+  height:30%;
+  width:40%;
+  overflow:auto;
+  border:2px solid #D2471F;
+  padding:2%;
+  color:#E1CA72;
+  border-radius: 10px;
+  text-align: center;
+  top: 33%;
+  left: 50%;
+  text-transform: uppercase;
+  font-size:30px;
+  font-weight:bold;  
+  position:fixed;
+  display:block;
+}
+#flip {
+  height:45px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#D2471F;
+}
+#flip div:first-child div {
+  background:#D2471F;
+}
+#flip div:last-child div {
+  background:#D2471F;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
